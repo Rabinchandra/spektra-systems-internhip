@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.top {
+  background-color: #181824;
+}
+
+.navbar {
+  position: relative;
+  padding: 0;
+  z-index: 10;
+}
+
+.active-link {
+  background-color: #5420e4;
+}
+
+.back-black {
+  width: 40%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+  margin-top: 3%;
+  padding: 2.5em 0;
+  /* transform: translate(0%, 10%); */
+}
+
+.hero-img {
+  width: 42%;
+}
+
+.hero-text {
+  /* border: 1px solid blue; */
+  margin-left: -50px;
+  width: 50%;
+  z-index: 100;
+}
+
+.hero-text header {
+  font-size: 4em;
+  line-height: 1.4em;
+  margin-top: -40px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+.work-exp {
+  padding: 5em 4em;
+}
+
+.work-exp .companies h1 {
+  font-size: 6em;
+}
+
+.companies span {
+  font-size: 20px;
+}
+
+.companies p {
+  font-size: 14px;
+}
+
+.company-1 {
+  color: rgb(4, 159, 4);
+}
+
+.company-2 {
+  color: rgb(47, 138, 230);
+}
+
+.company-3 {
+  color: rgb(250, 76, 134);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .hero-text header {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .navbar {
+    padding: 1.5em 0;
+  }
+  .hero-img {
+    width: 45%;
+    margin: auto;
+  }
+
+  .hero-text {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero-text header {
+    font-size: 40px;
+  }
+}
