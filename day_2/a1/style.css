@@ -102,6 +102,18 @@ body {
   }
 }
 
+.philosophy-values > div {
+  padding: 4em;
+  background-color: antiquewhite;
+}
+
+.philosophy-values .img {
+  background: url("https://img.freepik.com/premium-photo/man-sitting-meadow-doing-breath-exercises_251859-672.jpg");
+  background-size: cover;
+  min-height: 300px;
+  min-width: 50%;
+}
+
 @media screen and (max-width: 993px) {
   .navbar {
     padding: 1.5em 0;
@@ -119,5 +131,9 @@ body {
 
   .hero-text header {
     font-size: 40px;
+  }
+
+  .philosophy-values > div {
+    width: 100%;
   }
 }
