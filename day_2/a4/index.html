@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="bg-dark d-flex shadow">
+      <div class="navbar-brand text-white mx-3">Company Name</div>
+      <div class="input-group w-100 d-flex">
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="btn btn-dark" style="width: 100px">Sign up</button>
+      </div>
+    </nav>
+    <main class="d-flex h-100">
+      <!-- Aside -->
+      <aside>
+        <ul>
+          <li>
+            <i class="fi fi-rs-house-chimney"></i>
+            Dashboard
+          </li>
+          <li>
+            <i class="fi fi-rs-file"></i>
+            Orders
+          </li>
+          <li>
+            <i class="fi fi-rs-shopping-cart"></i>
+            Products
+          </li>
+          <li>
+            <i class="fi fi-rs-users"></i>
+            Customers
+          </li>
+          <li>
+            <i class="fi fi-rs-stats"></i>
+            Reports
+          </li>
+          <li>
+            <i class="fi fi-rs-layers"></i>
+            Integrations
+          </li>
+        </ul>
+
+        <header class="d-flex justify-content-between align-items-center">
+          <span class="text-uppercase">Saved Reports</span>
+          <i class="fi fi-rs-add"></i>
+        </header>
+        <ul>
+          <li>
+            <i class="fi fi-rs-house-chimney"></i>
+            Dashboard
+          </li>
+          <li>
+            <i class="fi fi-rs-file"></i>
+            Orders
+          </li>
+          <li>
+            <i class="fi fi-rs-shopping-cart"></i>
+            Products
+          </li>
+          <li>
+            <i class="fi fi-rs-users"></i>
+            Customers
+          </li>
+          <li>
+            <i class="fi fi-rs-stats"></i>
+            Reports
+          </li>
+          <li>
+            <i class="fi fi-rs-layers"></i>
+            Integrations
+          </li>
+        </ul>
+      </aside>
+      <!--  -->
+      <!--  -->
+      <section class="px-5 py-4 w-100">
+        <!-- Header -->
+        <header class="d-flex align-items-center justify-content-between">
+          <div class="h1">Dashboard</div>
+          <div class="d-flex">
+            <div class="input-group">
+              <button class="btn border">Share</button>
+              <button class="btn border">Export</button>
+            </div>
+            <input type="date" class="form-control" id="date" />
+            <select
+              name="chart-type"
+              id="chart-type"
+              class="form-control mx-3"
+              style="width: 200px"
+            >
+              <option value="">Chat Type</option>
+              <option value="line">Line</option>
+              <option value="bar">Bar</option>
+              <option value="area">Area</option>
+            </select>
+          </div>
+        </header>
+        <!-- Chart Graph -->
+        <div class="chart-output" id="chart"></div>
+      </section>
+    </main>
+
+    <!-- For Apex Chart -->
+    <script>
+      function renderChart(type) {
+        const options = {
+          chart: {
+            type: type, // Specify the type of chart
+          },
+          series: [
+            {
+              name: "Sales",
+              data: [40, 60, 35, 50, 100, 60, 70],
+            },
+          ],
+          xaxis: {
+            categories: [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+          },
+        };
+
+        const chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      }
+      // Render chart line initially
+      renderChart("line");
+
+      const select = document.querySelector("#chart-type");
+
+      // To update the chart, whenever we change the chart type
+      select.addEventListener("change", (e) => {
+        document.querySelector("#chart").innerHTML = "";
+        if (e.target.value !== "") {
+          renderChart(e.target.value);
+        }
+      });
+    </script>
+  </body>
+</html>

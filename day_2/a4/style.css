@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  background-color: rgba(113, 112, 112, 0.534);
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.search-input::placeholder {
+  color: #b1b1b1;
+}
+
+.navbar-brand {
+  width: 300px;
+}
+
+aside {
+  width: 275px;
+  padding: 14px 18px;
+  background: #f1f1f1;
+  height: 100%;
+}
+
+aside ul {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0;
+}
+
+aside ul li {
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+aside ul li:hover {
+  background: rgb(227, 227, 227);
+}
+
+aside header {
+  margin-top: 2em;
+  margin-bottom: 10px;
+}
+
+aside i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#chart {
+  width: 90%;
+  margin-top: 2em;
+}
