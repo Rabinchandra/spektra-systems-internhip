@@ -26,7 +26,7 @@
       </div>
     </header>
     <main class="container mt-5 d-md-flex py-4">
-      <form class="mb-5">
+      <form class="mb-5" id="form">
         <h3>Billing Address</h3>
         <section class="d-lg-flex gap-4 mt-3">
           <div>
@@ -35,6 +35,7 @@
               type="text"
               class="form-control d-block my-2"
               id="first-name"
+              name="first-name"
               required
             />
           </div>
@@ -44,6 +45,7 @@
               type="text"
               class="form-control d-block my-2"
               id="last-name"
+              name="last-name"
               required
             />
           </div>
@@ -59,6 +61,7 @@
               type="text"
               class="form-control d-block"
               id="username"
+              name="username"
               placeholder="Username"
               required
             />
@@ -74,6 +77,7 @@
               type="text"
               class="form-control d-block my-2"
               id="email"
+              name="email"
               placeholder="you@example.com"
             />
           </div>
@@ -87,6 +91,7 @@
               class="form-control d-block my-2"
               id="address"
               placeholder="1234 Main St"
+              name="address"
             />
           </div>
         </section>
@@ -94,7 +99,11 @@
         <section class="d-lg-flex gap-4 mt-3">
           <div>
             <label for="country">Country</label>
-            <select class="form-select d-block my-2" id="country">
+            <select
+              class="form-select d-block my-2"
+              id="country"
+              name="country"
+            >
               <option selected>Choose...</option>
               <option value="india">India</option>
               <option value="usa">USA</option>
@@ -103,7 +112,7 @@
           </div>
           <div>
             <label for="state">State</label>
-            <select class="form-select d-block my-2" id="state">
+            <select class="form-select d-block my-2" id="state" name="state">
               <option selected>Choose...</option>
               <option value="state-1">State 1</option>
               <option value="state-2">State 2</option>
@@ -112,7 +121,12 @@
           </div>
           <div>
             <label for="zip">Zip</label>
-            <input type="text" class="form-control d-block my-2" id="zip" />
+            <input
+              type="text"
+              class="form-control d-block my-2"
+              id="zip"
+              name="zip"
+            />
           </div>
         </section>
 
@@ -166,6 +180,7 @@
               type="text"
               class="form-control d-block my-2"
               id="name-on-card"
+              name="name-on-card"
             />
             <small class="text-muted my-2 d-block"
               >Full name as displayed on card</small
@@ -177,6 +192,7 @@
               type="number"
               class="form-control d-block my-2"
               id="credit-card-number"
+              name="credit-card-number"
               autocomplete="off"
             />
           </div>
@@ -184,11 +200,16 @@
         <section class="d-lg-flex gap-4 mt-3">
           <div style="flex: 0.3">
             <label for="expiration">Expiration</label>
-            <input type="text" class="form-control my-2" id="expiration" />
+            <input
+              type="text"
+              class="form-control my-2"
+              id="expiration"
+              name="expiration"
+            />
           </div>
           <div style="flex: 0.3">
             <label for="cvv">CVV</label>
-            <input type="text" class="form-control my-2" id="cvv" />
+            <input type="text" class="form-control my-2" id="cvv" name="cvv" />
           </div>
         </section>
         <hr />
@@ -261,7 +282,7 @@
         </ul>
       </aside>
     </main>
-
+    <script src="./main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
