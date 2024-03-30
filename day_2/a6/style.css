@@ -1,0 +1,87 @@
+.nav-logo img {
+  width: 100px;
+}
+
+input {
+  outline: none;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtxm3siVZ2f9I_gi1d07lU44j0lzMef7o8FrMksjOfwLGIKbX-YLT5AlMUGiR2LYDcVA&usqp=CAU");
+  background-size: cover;
+}
+
+.profile-area i {
+  font-size: 20px;
+}
+
+.search-wrapper {
+  width: 400px;
+}
+
+aside {
+  width: 250px;
+}
+
+aside li {
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+aside li:hover,
+aside .active {
+  background: #f4f3f3;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  align-items: center;
+}
+
+ul li i {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.thumbnail {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.video-item {
+  max-width: 400px;
+}
+
+.video-profile {
+  height: 30px;
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #333 !important;
+}
+
+.videos-list {
+  flex: 1;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.video-item {
+  transition: 0.5s;
+  min-width: 350px;
+  width: 30%;
+}
+
+.video-item:hover {
+  opacity: 0.7;
+}

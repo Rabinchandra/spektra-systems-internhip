@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav
+      class="d-flex px-4 align-items-center justify-content-between bg-white sticky-top"
+    >
+      <!-- Nav logo -->
+      <section class="nav-logo d-flex align-items-center">
+        <i class="fi fi-br-bars-staggered"></i>
+        <img
+          src="https://1000logos.net/wp-content/uploads/2017/05/Youtube-logo.jpg"
+          alt=""
+          class="mx-4"
+        />
+      </section>
+      <!-- Search Wrapper -->
+      <section>
+        <div
+          class="search-wrapper d-flex align-items-center border rounded-pill overflow-hidden"
+        >
+          <input type="text" placeholder="Search" class="border-0 mx-3" />
+          <div
+            class="bg-light py-2 px-4 border border-top-0 border-bottom-0 ms-auto"
+          >
+            <i class="fi fi-br-search"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proflile area -->
+      <section class="d-flex align-items-center gap-4 profile-area">
+        <i class="fi fi-rr-video-camera-alt"></i>
+        <i class="fi fi-rs-bell"></i>
+        <div class="profile rounded-circle"></div>
+      </section>
+    </nav>
+
+    <main class="d-flex overflow-scroll">
+      <aside class="px-4 py-3">
+        <ul>
+          <li class="d-flex active py-2 px-3">
+            <i class="fi fi-rs-house-chimney"></i>
+            <span class="mx-3">Home</span>
+          </li>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rs-clapperboard-play"></i>
+            <span class="mx-3">Shorts</span>
+          </li>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rs-subscription"></i>
+            <span class="mx-3">Subscriptions</span>
+          </li>
+        </ul>
+        <hr />
+        <ul>
+          <h5 class="mx-3 d-flex align-items-center">
+            <span>You</span>
+            <i class="fi fi-rs-angle-small-right mt-2 d-block"></i>
+          </h5>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rr-circle-user"></i>
+            <span class="mx-3">Your channel</span>
+          </li>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rr-time-past"></i>
+            <span class="mx-3">History</span>
+          </li>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rr-play-alt"></i>
+            <span class="mx-3">Your Videos</span>
+          </li>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rs-clock-five"></i>
+            <span class="mx-3">Watch Later</span>
+          </li>
+          <li class="d-flex py-2 px-3">
+            <i class="fi fi-rr-social-network"></i>
+            <span class="mx-3">Liked Videos</span>
+          </li>
+        </ul>
+      </aside>
+      <!-- Video List -->
+      <section class="videos-list px-3 py-4 d-flex flex-wrap gap-4">
+        <!-- Video 1 -->
+        <a
+          class="video-item d-block"
+          href="https://www.youtube.com/watch?v=mKdjycj-7eE"
+        >
+          <div
+            class="thumbnail"
+            style="
+              background-image: url('https://i.ytimg.com/vi/W2afl71B7t8/maxresdefault.jpg');
+            "
+          ></div>
+          <div class="py-3 d-flex">
+            <div class="video-profile rounded-circle bg-secondary"></div>
+            <div class="mx-3">
+              <h5>Stop This Train, Win a Lamborghini</h5>
+              <small class="d-block"> Mr Beast </small>
+              <small class="d-block">23.5M Views</small>
+            </div>
+          </div>
+        </a>
+        <!-- Video 2 -->
+        <a
+          class="video-item d-block"
+          href="https://www.youtube.com/watch?v=7maJOI3QMu0"
+        >
+          <div
+            class="thumbnail"
+            style="
+              background-image: url('https://i.ytimg.com/vi/XoKRy2dpYGY/maxresdefault.jpg');
+            "
+          ></div>
+          <div class="py-3 d-flex">
+            <div class="video-profile rounded-circle bg-secondary"></div>
+            <div class="mx-3">
+              <h5>River Flow by Yiruma</h5>
+              <small class="d-block"> Yobiee Piano </small>
+              <small class="d-block">188.5M Views</small>
+            </div>
+          </div>
+        </a>
+
+        <!-- Video 3 -->
+        <a
+          class="video-item d-block"
+          href="https://www.youtube.com/watch?v=0UFe9loZYiI"
+        >
+          <div
+            class="thumbnail"
+            style="
+              background-image: url('https://e0.pxfuel.com/wallpapers/525/834/desktop-wallpaper-lionel-messi-lionel-messi-leo-messi.jpg');
+            "
+          ></div>
+          <div class="py-3 d-flex">
+            <div class="video-profile rounded-circle bg-secondary"></div>
+            <div class="mx-3">
+              <h5>The Legend of Messi</h5>
+              <small class="d-block"> FootballFns </small>
+              <small class="d-block">13.5M Views</small>
+            </div>
+          </div>
+        </a>
+
+        <!-- Video 4 -->
+        <a
+          class="video-item d-block"
+          href="https://www.youtube.com/watch?v=K87aFjB7Ff0"
+        >
+          <div
+            class="thumbnail"
+            style="
+              background-image: url('https://templates.mediamodifier.com/5e3906e30d8333316731a952/Nature-Youtube-Channel-Art-Template.jpg');
+            "
+          ></div>
+          <div class="py-3 d-flex">
+            <div class="video-profile rounded-circle bg-secondary"></div>
+            <div class="mx-3">
+              <h5>Nature Normad beautiful</h5>
+              <small class="d-block"> NatureGuy </small>
+              <small class="d-block">20.5M Views</small>
+            </div>
+          </div>
+        </a>
+        <!-- Video 5 -->
+        <a
+          class="video-item d-block"
+          href="https://www.youtube.com/watch?v=vWaRiD5ym74"
+        >
+          <div
+            class="thumbnail"
+            style="
+              background-image: url('https://comunidaddefe.com.mx/wp-content/uploads/2021/07/Miniatura-Youtube-4.jpg');
+            "
+          ></div>
+          <div class="py-3 d-flex">
+            <div class="video-profile rounded-circle bg-secondary"></div>
+            <div class="mx-3">
+              <h5>Ocean View Vlogs</h5>
+              <small class="d-block"> Mr Vlogger </small>
+              <small class="d-block">100.2K Views</small>
+            </div>
+          </div>
+        </a>
+
+        <!-- Video 6 -->
+        <a class="video-item d-block" href="youtube.com/watch?v=wdLcmwmnFC0">
+          <div
+            class="thumbnail"
+            style="
+              background-image: url('https://i.ytimg.com/vi/C2rwQP4gKnk/maxresdefault.jpg');
+            "
+          ></div>
+          <div class="py-3 d-flex">
+            <div class="video-profile rounded-circle bg-secondary"></div>
+            <div class="mx-3">
+              <h5>Popular hindi songs mashup</h5>
+              <small class="d-block"> Music Mashup </small>
+              <small class="d-block">3.5M Views</small>
+            </div>
+          </div>
+        </a>
+
+        <!--  -->
+      </section>
+    </main>
+    <!--  -->
+    <!--  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
