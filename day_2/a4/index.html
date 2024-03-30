@@ -62,28 +62,20 @@
         </header>
         <ul>
           <li>
-            <i class="fi fi-rs-house-chimney"></i>
-            Dashboard
+            <i class="fi fi-rs-document"></i>
+            Current Month
           </li>
           <li>
-            <i class="fi fi-rs-file"></i>
-            Orders
-          </li>
-          <li>
-            <i class="fi fi-rs-shopping-cart"></i>
-            Products
+            <i class="fi fi-rs-ballot"></i>
+            Last Quarter
           </li>
           <li>
             <i class="fi fi-rs-users"></i>
-            Customers
+            Social Engagement
           </li>
           <li>
-            <i class="fi fi-rs-stats"></i>
-            Reports
-          </li>
-          <li>
-            <i class="fi fi-rs-layers"></i>
-            Integrations
+            <i class="fi fi-rs-benefit-porcent"></i>
+            Year and Sale
           </li>
         </ul>
       </aside>
@@ -104,8 +96,9 @@
               id="chart-type"
               class="form-control mx-3"
               style="width: 200px"
+              data-bs-toggle="tooltip"
+              title="Select a Bar Chart"
             >
-              <option value="">Chat Type</option>
               <option value="line">Line</option>
               <option value="bar">Bar</option>
               <option value="area">Area</option>
@@ -157,6 +150,21 @@
         if (e.target.value !== "") {
           renderChart(e.target.value);
         }
+      });
+    </script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     </script>
   </body>
