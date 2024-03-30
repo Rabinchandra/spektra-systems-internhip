@@ -1,0 +1,16 @@
+form {
+  flex: 0.7;
+  margin-right: 2em;
+}
+
+form section > div {
+  flex: 1;
+}
+
+aside {
+  flex: 0.3;
+}
+
+.logo {
+  width: 50px;
+}
