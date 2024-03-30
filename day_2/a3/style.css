@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;700&display=swap");
+
+* {
+  font-family: "Lexend";
+}
+
+body {
+  background-color: #fffcf8;
+}
+
+a {
+  color: #333 !important;
+}
+
+.nav-item i {
+  margin: 0 12px;
+  font-size: 1.3em;
+}
+
+.nav-item:last-child {
+  margin-left: 5em;
+}
+
+.nav-link {
+  margin: 0 14px;
+}
+
+.navbar {
+  border-bottom: 1px solid #666;
+}
+
+.profile {
+  border-radius: 50%;
+  background: url("https://img.freepik.com/free-photo/side-view-ofserious-man_23-2148946213.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711324800&semt=ais")
+    center;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.hero-text header {
+  font-size: 4em;
+  margin-left: -70px;
+}
+
+.hero .container > div {
+  flex-basis: 50%;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+
+.hero-text > div {
+  margin-left: 0;
+}
+
+.links ul {
+  padding: 0;
+  flex: 1;
+}
+
+.links ul li {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+  font-size: 20px;
+}
+
+.links li i {
+  font-size: 13px;
+}
+
+.links .scroll div {
+  border-radius: 40px;
+  font-size: 60px;
+  width: 60px;
+  height: 100px;
+}
+
+.links-image {
+  flex: 1;
+  height: 250px;
+  background: url("./secondary.jpeg") center;
+  background-size: cover;
+}
+
+.hero button {
+  margin-left: 50px;
+  margin-top: 40px;
+  border: 2px solid #333;
+  padding: 16px 12px;
+  background-color: #fff;
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+.hero button i {
+  font-size: 20px;
+}
+
+.hero button:hover {
+  background: #333;
+  color: #fff;
+}
+/* Media query */
+@media screen and (max-width: 1000px) {
+  .hero-text header {
+    font-size: 2em;
+    padding: 0 2em;
+  }
+
+  .video-wrapper {
+    text-align: center;
+  }
+
+  .hero button {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
