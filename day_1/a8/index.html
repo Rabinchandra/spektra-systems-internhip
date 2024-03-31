@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.2.0/uicons-brands/css/uicons-brands.css"
@@ -12,15 +13,18 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
   </head>
   <body>
     <nav>
       <div class="nav-brand">Rabin</div>
       <div>
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Project</a>
+        <a href="#about-me">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
         <a href="#">Contact</a>
       </div>
     </nav>
@@ -43,7 +47,7 @@
       </div>
     </section>
     <!-- About me -->
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <header class="header">
         <small>Get To Know Me</small>
         <h1>About Me</h1>
@@ -88,7 +92,7 @@
     </section>
 
     <!-- Skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <header class="header">
         <small>Explore My</small>
         <h1>Skills</h1>
@@ -177,5 +181,83 @@
         </div>
       </div>
     </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <header class="header">
+        <small>Browse My Recent</small>
+        <h1>Projects</h1>
+      </header>
+      <section class="wrapper">
+        <!--  -->
+        <div class="project-item">
+          <img
+            src="https://blog.cgify.com/wp-content/uploads/2021/05/ecommerce_mobile_app_design.jpg"
+            alt=""
+          />
+          <div>
+            <h2>Project 1</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, totam.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn-white">Github</button>
+            <button class="btn-dark">Live Demo</button>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="project-item">
+          <img
+            src="https://blog.cgify.com/wp-content/uploads/2021/05/ecommerce_mobile_app_design.jpg"
+            alt=""
+          />
+          <div>
+            <h2>Project 2</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, totam.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn-white">Github</button>
+            <button class="btn-dark">Live Demo</button>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="project-item">
+          <img
+            src="https://blog.cgify.com/wp-content/uploads/2021/05/ecommerce_mobile_app_design.jpg"
+            alt=""
+          />
+          <div>
+            <h2>Project 3</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, totam.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn-white">Github</button>
+            <button class="btn-dark">Live Demo</button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="contact">
+      <header class="header">
+        <small>Get In Touch</small>
+        <h1>Contact Me</h1>
+      </header>
+      <section>
+        <div class="contact-input-wrapper">
+          <i class="fi fi-sr-envelope"></i>
+          <input type="text" placeholder="Example@email.com" />
+        </div>
+      </section>
+    </section>
+    <footer>Copyright &copy; 2024 John Rabin. All Rights Reserved</footer>
   </body>
 </html>
