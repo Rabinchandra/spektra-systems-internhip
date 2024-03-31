@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
 
   // Radio inputs
   radioInputs.forEach(
-    (input) => input.checked && (result["radio-input"] = input.id)
+    (input) => input.checked && (result["payment"] = input.id)
   );
 
   alert(JSON.stringify(result));
