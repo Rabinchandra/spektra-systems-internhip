@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0 3em;
+  /* height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+* {
+  font-family: "Mukta";
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 3em;
+}
+
+.nav-brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 18px;
+  font-size: 21px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #333;
+}
+
+.hero {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  height: 86vh;
+  /* flex: 1; */
+  width: 100%;
+  align-items: center;
+}
+
+.hero-image {
+  background: url("./profile.jpeg") center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 4em;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text small {
+  font-size: 30px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.3em;
+}
+
+.hero h2 {
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+.btn-white,
+.btn-dark {
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-white:hover,
+.btn-dark:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.btn-white {
+  background: white;
+  border: 2px solid #333;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-links {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+  height: 100vh;
+}
+
+.about-me img {
+  margin-right: 40px;
+  transform: scale(1.1);
+  border-radius: 40%;
+}
+
+.header {
+  text-align: center;
+}
+
+.about-me > div {
+  display: flex;
+  align-items: center;
+}
+
+.experience {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.experience .wrapper {
+  border: 1px solid #333;
+  border-radius: 20px;
+  width: 45%;
+  margin-right: 2em;
+  padding: 1em 2em;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.experience .wrapper i {
+  font-size: 2em;
+}
+
+.experience .wrapper:hover {
+  transform: scale(1.1);
+  background: #333;
+  color: #fff;
+}
+
+.about-me-main-text {
+  font-weight: 100;
+  margin-top: 2em;
+}
+
+/* skills */
+.skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.skills header {
+  margin-bottom: 2em;
+}
+
+.skills .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills .wrapper h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.skill-1,
+.skill-2 {
+  width: 40%;
+  border: 1px solid #333;
+  padding: 1.5em 2.5em;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skill-1:hover,
+.skill-2:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.skill-detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-detail h3 {
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-detail > div {
+  display: flex;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.skill-detail i {
+  margin-right: 20px;
+}
+
+.skill-detail small {
+  font-size: 16px;
+  font-weight: 100;
+  display: block;
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    display: block;
+    margin-top: 100px;
+    line-height: 3.4em;
+  }
+  .hero-image {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1em;
+  }
+
+  .hero-text {
+    transform: scale(0.8);
+  }
+}
