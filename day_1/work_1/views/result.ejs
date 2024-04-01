@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Result Page</h1>
+    <table class="result" cellpadding="0" cellspacing="0">
+      <% Object.entries(result).forEach(res => { %> <% if (res[0] !==
+      "password") {%>
+      <tr>
+        <td><%=res[0]%></td>
+        <td><%=res[1]%></td>
+      </tr>
+
+      <% }%> <% }) %>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to our Homepage</h1>
+
+    <form action="get-result" method="POST">
+      <input
+        type="text"
+        placeholder="Enter name here"
+        name="name"
+        required
+        autocomplete="off"
+      />
+
+      <input
+        type="password"
+        placeholder="Enter password here"
+        name="password"
+        required
+      />
+      <input type="date" name="date" required />
+
+      <input
+        type="email"
+        placeholder="Enter email here"
+        name="email"
+        autocomplete="off"
+        required
+      />
+
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <label for="religion">Religion: </label>
+        <select name="religion" id="religion">
+          <option value="hindu">Hindu</option>
+          <option value="muslim">Muslim</option>
+          <option value="christian">Christian</option>
+          <option value="jain">Jain</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age :</label>
+        <span id="age-output"></span>
+        <input type="range" min="10" max="70" name="age" id="age" />
+      </div>
+
+      <input type="submit" />
+    </form>
+
+    <script>
+      const ageOutput = document.querySelector("#age-output");
+      const ageInput = document.querySelector("#age");
+
+      ageInput.addEventListener("change", (e) => {
+        ageOutput.innerHTML = e.target.value;
+      });
+    </script>
+  </body>
+</html>
