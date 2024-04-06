@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Reddit Mono";
+  transition: 0.3s;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  background: url("./image.jpg");
+  width: 40%;
+  height: 100vh;
+  background-size: cover;
+  background-position: right;
+}
+
+.form-wrapper {
+  flex: 1;
+}
+
+form {
+  background-color: white;
+  width: 550px;
+  padding: 2em;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 4em;
+}
+
+label,
+input {
+  display: block;
+}
+
+input:not(input[type="submit"]):focus {
+  border-color: #333;
+}
+
+input {
+  width: 100%;
+  border: 1.5px solid #d5d4d4;
+  padding: 10px 12px;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 1em;
+}
+
+input[type="submit"] {
+  margin-top: 2em;
+  border: 0;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(122, 51, 235);
+  cursor: pointer;
+}
+
+.valid {
+  border-color: #4caf50 !important;
+}
+
+.invalid {
+  border-color: red !important;
+  color: red;
+}
+
+.msg {
+  margin-bottom: 20px;
+}

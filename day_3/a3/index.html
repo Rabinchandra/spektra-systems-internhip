@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside></aside>
+      <div class="form-wrapper">
+        <form action="#">
+          <h1>Sign up</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, illo
+            fugit iste similique adipisci sapiente fuga ex suscipit totam.
+            Incidunt!
+          </p>
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              required
+            />
+            <div id="name-msg" class="msg"></div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              required
+            />
+            <div id="email-msg" class="msg"></div>
+          </div>
+
+          <div>
+            <label for="password">Create Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="off"
+            />
+            <div id="password-msg" class="msg"></div>
+          </div>
+
+          <div>
+            <label for="re-password">Re-enter Password</label>
+            <input
+              type="password"
+              name="re-password"
+              id="re-password"
+              autocomplete="off"
+              required
+            />
+            <div id="repassword-msg" class="msg"></div>
+          </div>
+
+          <input type="submit" value="Sign up" />
+        </form>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="./main.js"></script>
+  </body>
+</html>

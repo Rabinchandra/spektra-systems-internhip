@@ -1,10 +1,13 @@
 const form = document.querySelector("#form");
+
 const textInputs = Array.from(form.querySelectorAll('[type="text"]'));
 const numberInputs = Array.from(form.querySelectorAll('[type="number"]'));
 const emailInput = form.querySelector("#email");
 const radioInputs = Array.from(form.querySelectorAll('[name="radio-input"]'));
 
 const result = {};
+
+// console.log(form.querySelectorAll('[type="text"]'));
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -18,5 +21,5 @@ form.addEventListener("submit", (e) => {
     (input) => input.checked && (result["payment"] = input.id)
   );
 
-  alert(JSON.stringify(result));
+  alert(JSON.stringify(result, null, 2));
 });
